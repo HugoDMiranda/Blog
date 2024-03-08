@@ -1,11 +1,46 @@
 import "./App.css";
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+import Home from "./views/Home";
+import Login from "./views/Login";
+import Main from "./views/Main";
+
+const Layout = () => {
+  return (
+    <>
+      {/* <Navbar /> */}
+      <div className="container">
+        <Outlet />
+      </div>
+      {/* <Footer /> */}
+    </>
+  );
+};
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/Login",
+        element: <Login />,
+      },
+      {
+        path: "/Main",
+        element: <Main />,
+      },
+    ],
+  },
+]);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Blog</h1>
-      </header>
+      <RouterProvider router={router} />
     </div>
   );
 }
