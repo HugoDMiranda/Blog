@@ -3,15 +3,17 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 import Home from "./views/Home";
 import Login from "./views/Login";
 import Main from "./views/Main";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const Layout = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <div className="container">
         <Outlet />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
