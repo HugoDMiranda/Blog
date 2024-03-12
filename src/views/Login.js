@@ -1,4 +1,5 @@
 import React from "react";
+import "../sass/Login.css";
 
 function Login() {
   return <div>Login</div>;
