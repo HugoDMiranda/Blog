@@ -1,7 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
-  return <div>Footer</div>;
+  return (
+    <nav className="footer">
+      <Link to="/">Footer</Link>
+    </nav>
+  );
 }
 
 export default Footer;
