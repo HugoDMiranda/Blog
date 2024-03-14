@@ -6,8 +6,8 @@ function Home() {
     <main className="home">
       <h2>Home</h2>
       <div className="home-blogs">
-        <h4>Articulos</h4>
-        <h4>Ultimos articulos</h4>
+        <h4 className="home-blogs-sections">Articulos</h4>
+        <h4 className="home-blogs-topics">Ultimos articulos</h4>
       </div>
     </main>
   );
