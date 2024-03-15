@@ -1,6 +1,5 @@
 .App {
-  border: 3px solid red;
-  height: 99vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
