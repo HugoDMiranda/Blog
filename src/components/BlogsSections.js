@@ -9,7 +9,7 @@ function BlogsSections() {
         <p>Date 00/00/00 at 00:00</p>
       </div>
       <div className="sections-sum">
-        <p>Topics</p>
+        <h5>Topics</h5>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec finibus
           scelerisque ligula id hendrerit. Morbi in ultricies nunc. Class aptent

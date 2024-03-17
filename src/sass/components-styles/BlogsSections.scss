@@ -2,4 +2,28 @@
   flex: 4;
   border: 1px solid blue;
   width: 100%;
+  margin: 5px 60px;
+
+  &-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+
+    p {
+      color: gray;
+    }
+  }
+
+  &-sum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h5 {
+      color: gray;
+      margin: 0;
+    }
+  }
 }
