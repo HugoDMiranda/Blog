@@ -4,9 +4,9 @@ import "../sass/components-styles/Footer.css";
 
 function Footer() {
   return (
-    <nav className="footer">
-      <Link to="/">Footer</Link>
-    </nav>
+    <footer className="footer">
+      <Link to="/">Blog</Link>
+    </footer>
   );
 }
 
