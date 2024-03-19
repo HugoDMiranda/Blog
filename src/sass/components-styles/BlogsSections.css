@@ -1,3 +1,10 @@
+a {
+  text-decoration: none;
+}
+a:active {
+  color: black;
+}
+
 .sections {
   flex: 4;
   border: 1px solid blue;
@@ -10,8 +17,11 @@
   justify-content: space-between;
   align-items: baseline;
 }
+.sections-info h2 {
+  color: black;
+}
 .sections-info p {
-  color: gray;
+  color: rgb(183, 183, 183);
 }
 .sections-sum {
   display: flex;
@@ -20,6 +30,9 @@
   align-items: flex-start;
 }
 .sections-sum h5 {
-  color: gray;
+  color: rgb(183, 183, 183);
   margin: 0;
+}
+.sections-sum p {
+  color: black;
 }/*# sourceMappingURL=BlogsSections.css.map */

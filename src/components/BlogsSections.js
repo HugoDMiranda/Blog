@@ -1,5 +1,6 @@
 import React from "react";
 import "../sass/components-styles/BlogsSections.css";
+import { Link } from "react-router-dom";
 
 function BlogsSections() {
   const Test = [1, 2, 3, 4, 5];
@@ -8,7 +9,7 @@ function BlogsSections() {
     <section className="sections">
       {Test.map((test) => {
         return (
-          <>
+          <Link to="/Main">
             <div className="sections-info">
               <h2>Title</h2>
               <p>Date 00/00/00 at 00:00</p>
@@ -28,7 +29,7 @@ function BlogsSections() {
                 tincidunt.
               </p>
             </div>
-          </>
+          </Link>
         );
       })}
     </section>

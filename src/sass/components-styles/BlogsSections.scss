@@ -1,3 +1,10 @@
+a {
+  text-decoration: none;
+
+  &:active {
+    color: black;
+  }
+}
 .sections {
   flex: 4;
   border: 1px solid blue;
@@ -10,8 +17,12 @@
     justify-content: space-between;
     align-items: baseline;
 
+    h2 {
+      color: black;
+    }
+
     p {
-      color: gray;
+      color: rgb(183, 183, 183);
     }
   }
 
@@ -22,8 +33,11 @@
     align-items: flex-start;
 
     h5 {
-      color: gray;
+      color: rgb(183, 183, 183);
       margin: 0;
+    }
+    p {
+      color: black;
     }
   }
 }
