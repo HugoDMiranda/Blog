@@ -1,1 +1,16 @@
-/*# sourceMappingURL=Main.css.map */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 70%;
+}
+.main-blog {
+  width: 70%;
+}/*# sourceMappingURL=Main.css.map */

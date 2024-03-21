@@ -3,13 +3,12 @@ import "../sass/Main.css";
 
 function Main() {
   return (
-    <>
+    <div className="main">
       <div className="main-info">
         <div>
           <img src="img/tes3.png" alt="user-img" />
           <h4>Jane Doe</h4>
         </div>
-
         <h2>Title</h2>
         <p>Date 00/00/00 at 00:00</p>
       </div>
@@ -27,7 +26,7 @@ function Main() {
           tincidunt.
         </p>
       </div>
-    </>
+    </div>
   );
 }
 
