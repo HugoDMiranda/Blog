@@ -13,4 +13,11 @@
   &-blog {
     width: 70%;
   }
+
+  &-similar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+  }
 }

@@ -13,4 +13,10 @@
 }
 .main-blog {
   width: 70%;
+}
+.main-similar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
 }/*# sourceMappingURL=Main.css.map */

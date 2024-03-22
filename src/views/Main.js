@@ -1,5 +1,6 @@
 import React from "react";
 import "../sass/Main.css";
+import Similar from "../components/Similar";
 
 function Main() {
   return (
@@ -25,6 +26,11 @@ function Main() {
           sagittis libero convallis non. Sed faucibus risus non dapibus
           tincidunt.
         </p>
+      </div>
+      <div className="main-similar">
+        <Similar />
+        <Similar />
+        <Similar />
       </div>
     </div>
   );
