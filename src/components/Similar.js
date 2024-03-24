@@ -1,10 +1,11 @@
 import React from "react";
+import "../sass/components-styles/Similar.css";
 
 function Similar() {
   return (
     <div className="similar">
       <div className="similar-info">
-        <img src="img/tes3.png" alt="user-img" />
+        <img src="img/tes3.png" alt="user-img" className="similar-info-img" />
         <h2>Title</h2>
       </div>
       <div className="similar-blog">

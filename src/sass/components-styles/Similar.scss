@@ -1,0 +1,16 @@
+.similar {
+  border: 1px solid gray;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  max-width: 300px;
+  &-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    &-img {
+      max-width: 70px;
+    }
+  }
+}

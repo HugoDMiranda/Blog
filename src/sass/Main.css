@@ -17,6 +17,7 @@
 .main-similar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 70%;
+  flex-wrap: wrap;
 }/*# sourceMappingURL=Main.css.map */
