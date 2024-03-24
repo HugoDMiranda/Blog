@@ -6,8 +6,12 @@ function Main() {
   return (
     <div className="main">
       <div className="main-info">
-        <div>
-          <img src="img/tes3.png" alt="user-img" />
+        <div className="main-info-user">
+          <img
+            src="img/tes3.png"
+            alt="user-img"
+            className="main-info-user-img"
+          />
           <h4>Jane Doe</h4>
         </div>
         <h2>Title</h2>

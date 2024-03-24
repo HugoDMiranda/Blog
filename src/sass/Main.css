@@ -11,6 +11,13 @@
   flex-direction: column;
   width: 70%;
 }
+.main-info-user {
+  display: flex;
+  flex-direction: column;
+}
+.main-info-user-img {
+  max-width: 290px;
+}
 .main-blog {
   width: 70%;
 }
