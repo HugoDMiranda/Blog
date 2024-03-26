@@ -3,4 +3,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav a:active {
+  color: black;
 }/*# sourceMappingURL=Navbar.css.map */
