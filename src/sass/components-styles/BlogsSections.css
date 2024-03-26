@@ -1,27 +1,35 @@
-a {
-  text-decoration: none;
-}
-a:active {
-  color: black;
-}
-
 .sections {
   flex: 4;
-  border: 1px solid blue;
   width: 100%;
   margin: 5px 60px;
+}
+.sections .section {
+  border: 1px solid black;
+  margin: 10px 0px;
+}
+.sections a {
+  text-decoration: none;
+}
+.sections a:active {
+  color: black;
 }
 .sections-info {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  width: 100%;
   align-items: baseline;
+}
+.sections-info-img {
+  width: 100px;
 }
 .sections-info h2 {
   color: black;
+  align-self: center;
 }
 .sections-info p {
   color: rgb(183, 183, 183);
+  width: 100%;
+  text-align: end;
 }
 .sections-sum {
   display: flex;
