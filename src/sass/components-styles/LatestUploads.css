@@ -1,0 +1,15 @@
+h3 {
+  text-align: center;
+}
+
+.latest .last {
+  border: 1px solid gray;
+  margin: 10px 0px;
+}
+.latest .last a {
+  text-decoration: none;
+  color: black;
+}
+.latest .last .latest-info-img {
+  max-width: 70px;
+}/*# sourceMappingURL=LatestUploads.css.map */

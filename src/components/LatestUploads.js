@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../sass/components-styles/LatestUploads.css";
 
 function LatestUploads() {
   const Test = [1, 2, 3];
 
   return (
-    <div>
+    <>
       <h3>Latest uploads</h3>
       <section className="latest">
         {Test.map((test) => {
@@ -26,7 +27,7 @@ function LatestUploads() {
           );
         })}
       </section>
-    </div>
+    </>
   );
 }
 
