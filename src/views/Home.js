@@ -2,6 +2,7 @@ import React from "react";
 import "../sass/Home.css";
 import BlogsSections from "../components/BlogsSections";
 import BlogsTopics from "../components/BlogsTopics";
+import LatestUploads from "../components/LatestUploads";
 
 function Home() {
   return (
@@ -9,7 +10,10 @@ function Home() {
       <h2>Home</h2>
       <div className="home-blogs">
         <BlogsSections />
-        <BlogsTopics />
+        <div className="home-blogs-topics">
+          <BlogsTopics />
+          <LatestUploads />
+        </div>
       </div>
     </main>
   );
