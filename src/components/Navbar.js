@@ -6,14 +6,12 @@ import {
   FaRegChartBar,
   FaCommentAlt,
   FaShoppingBag,
-  FaThList,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 // import { Link } from "react-router-dom";
 import "../sass/components-styles/Navbar.css";
 
 function Navbar() {
-  const Test = [1, 2, 3];
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
 
@@ -43,21 +41,22 @@ function Navbar() {
       name: "Product",
       icon: <FaShoppingBag />,
     },
-    {
-      path: "/productList",
-      name: "Product List",
-      icon: <FaThList />,
-    },
   ];
 
   return (
     <div className="container">
-      <div style={{ width: isOpen ? "200px" : "50px" }} className="sidebar">
+      <div
+        style={{
+          width: isOpen ? "200px" : "50px",
+          background: isOpen ? "rgb(226, 226, 226)" : "transparent",
+        }}
+        className="sidebar"
+      >
         <div className="top_section">
-          <h1 style={{ display: isOpen ? "block" : "none" }} className="logo">
+          {/* <h1 style={{ display: isOpen ? "block" : "none" }} className="logo">
             Logo
-          </h1>
-          <div style={{ marginLeft: isOpen ? "50px" : "0px" }} className="bars">
+          </h1> */}
+          <div className="bars">
             <FaBars onClick={toggle} />
           </div>
         </div>
@@ -78,7 +77,7 @@ function Navbar() {
           </NavLink>
         ))}
       </div>
-      <main>Children</main>
+      {/* <main>Children</main> */}
     </div>
   );
 }
