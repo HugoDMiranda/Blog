@@ -5,7 +5,7 @@ import "../sass/components-styles/Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <Link to="/">Blog</Link>
+      <Link to="/">Home</Link>
     </footer>
   );
 }

@@ -8,7 +8,6 @@ import {
   FaShoppingBag,
 } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
-// import { Link } from "react-router-dom";
 import "../sass/components-styles/Navbar.css";
 
 function Navbar() {
@@ -53,9 +52,6 @@ function Navbar() {
         className="sidebar"
       >
         <div className="top_section">
-          {/* <h1 style={{ display: isOpen ? "block" : "none" }} className="logo">
-            Logo
-          </h1> */}
           <div className="bars">
             <FaBars onClick={toggle} />
           </div>
@@ -77,7 +73,6 @@ function Navbar() {
           </NavLink>
         ))}
       </div>
-      {/* <main>Children</main> */}
     </div>
   );
 }
