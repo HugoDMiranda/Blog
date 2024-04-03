@@ -72,6 +72,10 @@ function Navbar() {
             </div>
           </NavLink>
         ))}
+        <div style={{ display: isOpen ? "block" : "none" }}>
+          <img src="img/tes3.png" alt="user-img" className="nav-user-img" />
+          <h4>User name</h4>
+        </div>
       </div>
     </div>
   );
