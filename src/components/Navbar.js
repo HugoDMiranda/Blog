@@ -1,12 +1,6 @@
 import { useState } from "react";
-import {
-  FaTh,
-  FaBars,
-  FaUserAlt,
-  FaRegChartBar,
-  FaCommentAlt,
-  FaShoppingBag,
-} from "react-icons/fa";
+import { FaBars, FaUserAlt, FaCommentAlt, FaStar } from "react-icons/fa";
+import { IoHomeSharp } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 import "../sass/components-styles/Navbar.css";
 
@@ -17,18 +11,13 @@ function Navbar() {
   const menuItem = [
     {
       path: "/",
-      name: "Dashboard",
-      icon: <FaTh />,
+      name: "Home",
+      icon: <IoHomeSharp />,
     },
     {
       path: "/about",
-      name: "About",
+      name: "Yours",
       icon: <FaUserAlt />,
-    },
-    {
-      path: "/analytics",
-      name: "Analytics",
-      icon: <FaRegChartBar />,
     },
     {
       path: "/comment",
@@ -36,9 +25,9 @@ function Navbar() {
       icon: <FaCommentAlt />,
     },
     {
-      path: "/product",
-      name: "Product",
-      icon: <FaShoppingBag />,
+      path: "/favorites",
+      name: "Favorites",
+      icon: <FaStar />,
     },
   ];
 

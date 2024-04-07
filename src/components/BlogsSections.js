@@ -9,7 +9,7 @@ function BlogsSections() {
     <section className="sections">
       {Test.map((test) => {
         return (
-          <div className="section">
+          <div className="section" key={test}>
             <Link to="/Main">
               <div className="sections-info">
                 <img

@@ -11,7 +11,7 @@ function LatestUploads() {
       <section className="latest">
         {Test.map((test) => {
           return (
-            <div className="last">
+            <div className="last" key={test}>
               <Link to="/Main">
                 <div className="latest-info">
                   <img
