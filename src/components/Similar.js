@@ -1,9 +1,10 @@
 import React from "react";
 import "../sass/components-styles/Similar.css";
+import { Link } from "react-router-dom";
 
 function Similar() {
   return (
-    <div className="similar">
+    <Link className="similar" to="/Main">
       <div className="similar-info">
         <img src="img/tes3.png" alt="user-img" className="similar-info-img" />
         <h2>Title</h2>
@@ -17,7 +18,7 @@ function Similar() {
           himenaeos...
         </p>
       </div>
-    </div>
+    </Link>
   );
 }
 
