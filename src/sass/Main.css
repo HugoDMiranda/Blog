@@ -3,12 +3,14 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 40px;
 }
 .main-info {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
+  background-color: gray;
   width: 70%;
 }
 .main-info-user {
@@ -17,6 +19,7 @@
 }
 .main-info-user-img {
   max-width: 290px;
+  border-radius: 50%;
 }
 .main-blog {
   width: 70%;

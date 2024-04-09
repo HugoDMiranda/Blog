@@ -14,8 +14,8 @@ function Main() {
           />
           <h4>Jane Doe</h4>
         </div>
-        <h2>Title</h2>
         <p>Date 00/00/00 at 00:00</p>
+        <h2>Title</h2>
       </div>
       <div className="main-blog">
         <h5>Topics</h5>
