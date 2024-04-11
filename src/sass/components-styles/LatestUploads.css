@@ -5,6 +5,8 @@ h3 {
 .latest .last {
   border: 1px solid gray;
   margin: 10px 0px;
+  padding: 10px 5px;
+  background-color: gray;
 }
 .latest .last a {
   text-decoration: none;
@@ -12,4 +14,5 @@ h3 {
 }
 .latest .last .latest-info-img {
   max-width: 70px;
+  border-radius: 50%;
 }/*# sourceMappingURL=LatestUploads.css.map */
