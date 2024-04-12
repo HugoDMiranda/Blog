@@ -1,6 +1,6 @@
 .similar {
   border: 1px solid gray;
-  padding: 10px;
+  // padding: 10px;
   margin-top: 50px;
   margin-bottom: 20px;
   max-width: 300px;
@@ -11,8 +11,15 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: row;
+    background-color: gray;
+    width: 100%;
     &-img {
       max-width: 70px;
+      border-radius: 50%;
+      margin: 10px 15px;
     }
+  }
+  &-blog {
+    padding: 10px 5px;
   }
 }
