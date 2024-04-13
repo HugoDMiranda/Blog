@@ -1,4 +1,5 @@
 import React from "react";
+import "../sass/components-styles/HomeSlide.css";
 
 function HomeSlide() {
   return (
