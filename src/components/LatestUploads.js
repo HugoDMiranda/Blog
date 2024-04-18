@@ -7,7 +7,7 @@ function LatestUploads() {
 
   return (
     <>
-      <h3>Latest uploads</h3>
+      <h3 className="latest-title">Latest uploads</h3>
       <section className="latest">
         {Test.map((test) => {
           return (
