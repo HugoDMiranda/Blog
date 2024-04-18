@@ -3,15 +3,17 @@ import "../sass/components-styles/BlogsTopics.css";
 import Topics from "./Topics";
 
 function BlogsTopics() {
-  const Test = [1, 2, 3];
+  const Test = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
   return (
-    <div className="topics">
+    <>
       <h3 className="topics-title">Topics</h3>
-      {Test.map((test) => {
-        return <Topics topic={"Comedy"} />;
-      })}
-    </div>
+      <div className="topics">
+        {Test.map((test) => {
+          return <Topics topic={"Comedy"} />;
+        })}
+      </div>
+    </>
   );
 }
 

@@ -4,8 +4,12 @@
   justify-content: center;
   flex-direction: column;
   border: 1px solid blue;
+  max-height: 140px;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 .topic-text {
   font-size: 30px;
   margin: 0;
+  margin: 0px 10px;
 }/*# sourceMappingURL=Topics.css.map */
