@@ -9,7 +9,10 @@ function BlogsSections() {
     <section className="sections">
       {Test.map((test) => {
         return (
-          <div className="section" key={test}>
+          <div
+            className="section animate__animated animate__fadeInLeft"
+            key={test}
+          >
             <Link to="/Main">
               <div className="sections-info">
                 <img
