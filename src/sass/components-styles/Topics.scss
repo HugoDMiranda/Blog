@@ -9,9 +9,12 @@
   margin-bottom: 5px;
   cursor: pointer;
   transition: 0.2s;
+  background: linear-gradient(to left, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: left;
 
   &:hover {
-    background-color: black;
+    background-position: right;
     color: white;
   }
 
