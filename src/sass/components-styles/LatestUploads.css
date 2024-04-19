@@ -1,12 +1,17 @@
 .latest-title {
   text-align: center;
+  background-color: gray;
+  font-size: 30px;
+  color: white;
+  padding: 10px 0px;
+  margin: 0;
+  margin-top: 40px;
 }
 
 .latest .last {
-  border: 1px solid gray;
   margin: 10px 0px;
   padding: 10px 5px;
-  background-color: gray;
+  background-color: rgb(209, 209, 209);
 }
 .latest .last a {
   text-decoration: none;
