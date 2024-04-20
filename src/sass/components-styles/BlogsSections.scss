@@ -9,10 +9,14 @@
     margin-top: 10px;
     padding: 10px;
     padding-left: 50px;
-    transition: 0.2s;
+    transition: 0.5s;
+    background: linear-gradient(to right, rgb(255, 63, 63) 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right;
 
     &:hover {
-      background-color: gray;
+      background-position: left;
+      color: white;
     }
   }
 
