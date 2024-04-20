@@ -13,6 +13,7 @@ function BlogsTopics() {
           return <Topics topic={"Comedy"} />;
         })}
       </div>
+      <hr />
     </>
   );
 }
