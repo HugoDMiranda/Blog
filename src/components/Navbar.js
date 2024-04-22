@@ -15,7 +15,7 @@ function Navbar() {
       icon: <IoHomeSharp />,
     },
     {
-      path: "/about",
+      path: "/Login",
       name: "Yours",
       icon: <FaUserAlt />,
     },
