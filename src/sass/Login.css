@@ -1,1 +1,23 @@
-/*# sourceMappingURL=Login.css.map */
+.login {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  height: 92vh;
+}
+.login-account {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+.login-info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  background-color: gray;
+}/*# sourceMappingURL=Login.css.map */
