@@ -21,6 +21,29 @@
     justify-content: center;
     flex-direction: column;
     height: 100%;
-    background-color: gray;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 1) 18%,
+      rgba(86, 86, 86, 1) 79%
+    );
+
+    h2 {
+      font-size: 70px;
+      border-top: 3px solid rgb(227, 227, 227);
+      border-left: 3px solid rgb(227, 227, 227);
+      padding: 0px 10px;
+      background-color: rgb(62, 62, 62);
+      color: white;
+    }
+
+    h4 {
+      font-size: 30px;
+      border-bottom: 3px solid rgb(227, 227, 227);
+      border-right: 3px solid rgb(227, 227, 227);
+      padding: 0px 10px;
+      background-color: rgb(62, 62, 62);
+      color: white;
+    }
   }
 }
