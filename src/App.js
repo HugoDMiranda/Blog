@@ -5,6 +5,7 @@ import Login from "./views/Login";
 import Main from "./views/Main";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import User from "./views/User";
 
 const Layout = () => {
   return (
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/Main",
         element: <Main />,
+      },
+      {
+        path: "/User",
+        element: <User />,
       },
     ],
   },
