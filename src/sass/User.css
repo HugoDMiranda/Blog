@@ -1,0 +1,41 @@
+.user {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.user-info {
+  padding-top: 20px;
+  background-color: rgb(206, 206, 206);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.user-info-img {
+  width: 250px;
+  border-radius: 50%;
+}
+.user-info h4 {
+  font-size: 50px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  text-align: center;
+  font-weight: 200;
+}
+.user-button {
+  margin-top: 30px;
+}
+.user-button button {
+  width: 200px;
+  padding: 10px;
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-bottom: 2px solid black;
+}/*# sourceMappingURL=User.css.map */
