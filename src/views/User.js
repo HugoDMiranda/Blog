@@ -1,7 +1,9 @@
-import React from "react";
+import { useState } from "react";
 import "../sass/User.css";
 
 function User() {
+  const [posts, setPosts] = useState(false);
+
   return (
     <div className="user">
       <div className="user-info">
@@ -9,11 +11,11 @@ function User() {
         <h4>Jane Doe</h4>
       </div>
       <div className="user-button">
-        <button>Favorites</button>
-        <button>Yours</button>
+        <button onClick={() => setPosts(true)}>Favorites</button>
+        <button onClick={() => setPosts(false)}>Yours</button>
       </div>
       <div className="user-posts">
-        <h3>POSTS</h3>
+        {posts ? <h3>POSTS FAVORIES</h3> : <h3>POSTS YOURS</h3>}
       </div>
     </div>
   );
