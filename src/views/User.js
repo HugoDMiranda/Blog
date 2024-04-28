@@ -11,8 +11,18 @@ function User() {
         <h4>Jane Doe</h4>
       </div>
       <div className="user-button">
-        <button onClick={() => setPosts(true)}>Favorites</button>
-        <button onClick={() => setPosts(false)}>Yours</button>
+        <button
+          className={posts ? "active" : ""}
+          onClick={() => setPosts(true)}
+        >
+          Favorites
+        </button>
+        <button
+          className={posts ? "" : "active"}
+          onClick={() => setPosts(false)}
+        >
+          Yours
+        </button>
       </div>
       <div className="user-posts">
         {posts ? <h3>POSTS FAVORIES</h3> : <h3>POSTS YOURS</h3>}

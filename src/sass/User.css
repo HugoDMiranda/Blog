@@ -29,13 +29,23 @@
 }
 .user-button {
   margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .user-button button {
-  width: 200px;
-  padding: 10px;
-  font-size: 40px;
+  width: 38%;
+  padding: 10px 0px;
+  font-size: 30px;
   background-color: transparent;
   border: none;
   cursor: pointer;
-  border-bottom: 2px solid black;
+  transition: 0.3s;
+  border-bottom: 2px solid rgb(64, 105, 255);
+}
+.user-button .active {
+  background-color: rgb(64, 105, 255);
+  color: white;
 }/*# sourceMappingURL=User.css.map */
