@@ -1,8 +1,10 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../sass/User.css";
 
 function User() {
   const [posts, setPosts] = useState(false);
+  const Test = [1, 2, 3, 4, 5];
 
   return (
     <div className="user">
@@ -25,7 +27,32 @@ function User() {
         </button>
       </div>
       <div className="user-posts">
-        {posts ? <h3>POSTS FAVORIES</h3> : <h3>POSTS YOURS</h3>}
+        {posts ? (
+          Test.map((test) => {
+            return (
+              <div
+                className="user-posts-favorites animate__animated animate__fadeInLeft "
+                key={test}
+              >
+                <Link to="/Main">
+                  <div className="user-posts-favorites-info">
+                    <img
+                      src="img/tes3.png"
+                      alt="user-img"
+                      className="user-posts-favorites-info-img"
+                    />
+                    <h2>Title</h2>
+                  </div>
+                  <div className="user-posts-favorites-topics">
+                    <h5>Topics</h5>
+                  </div>
+                </Link>
+              </div>
+            );
+          })
+        ) : (
+          <h3>POSTS YOURS</h3>
+        )}
       </div>
     </div>
   );
