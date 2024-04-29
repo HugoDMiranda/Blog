@@ -38,7 +38,7 @@
     justify-content: center;
     flex-wrap: wrap;
     button {
-      width: 38%;
+      width: 40%;
       padding: 10px 0px;
       font-size: 30px;
       background-color: transparent;
@@ -82,6 +82,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        flex-wrap: wrap;
 
         &-img {
           width: 150px;

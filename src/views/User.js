@@ -27,32 +27,51 @@ function User() {
         </button>
       </div>
       <div className="user-posts">
-        {posts ? (
-          Test.map((test) => {
-            return (
-              <div
-                className="user-posts-favorites animate__animated animate__fadeInLeft "
-                key={test}
-              >
-                <Link to="/Main">
-                  <div className="user-posts-favorites-info">
-                    <img
-                      src="img/tes3.png"
-                      alt="user-img"
-                      className="user-posts-favorites-info-img"
-                    />
-                    <h2>Title</h2>
-                  </div>
-                  <div className="user-posts-favorites-topics">
-                    <h5>Topics</h5>
-                  </div>
-                </Link>
-              </div>
-            );
-          })
-        ) : (
-          <h3>POSTS YOURS</h3>
-        )}
+        {posts
+          ? Test.map((test) => {
+              return (
+                <div
+                  className="user-posts-favorites animate__animated animate__fadeInLeft "
+                  key={test}
+                >
+                  <Link to="/Main">
+                    <div className="user-posts-favorites-info">
+                      <img
+                        src="img/tes3.png"
+                        alt="user-img"
+                        className="user-posts-favorites-info-img"
+                      />
+                      <h2>Favorites</h2>
+                    </div>
+                    <div className="user-posts-favorites-topics">
+                      <h5>Topics</h5>
+                    </div>
+                  </Link>
+                </div>
+              );
+            })
+          : Test.map((test) => {
+              return (
+                <div
+                  className="user-posts-favorites animate__animated animate__fadeInLeft "
+                  key={test}
+                >
+                  <Link to="/Main">
+                    <div className="user-posts-favorites-info">
+                      <img
+                        src="img/tes3.png"
+                        alt="user-img"
+                        className="user-posts-favorites-info-img"
+                      />
+                      <h2>Yours</h2>
+                    </div>
+                    <div className="user-posts-favorites-topics">
+                      <h5>Topics</h5>
+                    </div>
+                  </Link>
+                </div>
+              );
+            })}
       </div>
     </div>
   );
