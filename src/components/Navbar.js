@@ -25,7 +25,7 @@ function Navbar() {
       icon: <FaCommentAlt />,
     },
     {
-      path: "/favorites",
+      path: "/User",
       name: "Favorites",
       icon: <FaStar />,
     },

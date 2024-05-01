@@ -45,6 +45,7 @@ function User() {
                     </div>
                     <div className="user-posts-favorites-topics">
                       <h5>Topics</h5>
+                      <p>Date 00/00/00 at 00:00</p>
                     </div>
                   </Link>
                 </div>
@@ -67,6 +68,7 @@ function User() {
                     </div>
                     <div className="user-posts-favorites-topics">
                       <h5>Topics</h5>
+                      <p>Date 00/00/00 at 00:00</p>
                     </div>
                   </Link>
                 </div>
