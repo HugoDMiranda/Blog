@@ -12,6 +12,44 @@
   flex-direction: column;
   height: 100%;
 }
+.login-account-title {
+  font-size: 25px;
+  font-weight: 400;
+  font-style: italic;
+}
+.login-account-text {
+  text-align: start;
+  width: 50%;
+  font-weight: 100;
+  margin: 10px;
+}
+.login-account-input {
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 50%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+.login-account-login {
+  width: 50%;
+  text-align: end;
+  margin: 30px 0px;
+  color: gray;
+  font-size: 15px;
+  cursor: pointer;
+}
+.login-account-button {
+  background-color: transparent;
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  transition: 0.5s;
+}
+.login-account-button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
 .login-info {
   width: 100%;
   display: flex;

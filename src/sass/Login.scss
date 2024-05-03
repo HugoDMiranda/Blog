@@ -2,9 +2,7 @@
   width: 100%;
   display: flex;
   align-items: stretch;
-  // justify-content: center;
   height: 92vh;
-  // border: 1px solid black;
 
   &-account {
     width: 100%;
@@ -13,6 +11,50 @@
     justify-content: center;
     flex-direction: column;
     height: 100%;
+
+    &-title {
+      font-size: 25px;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    &-text {
+      text-align: start;
+      width: 50%;
+      font-weight: 100;
+      margin: 10px;
+    }
+
+    &-input {
+      border: none;
+      border-bottom: 1px solid gray;
+      width: 50%;
+      height: 40px;
+      margin-bottom: 20px;
+    }
+
+    &-login {
+      width: 50%;
+      text-align: end;
+      margin: 30px 0px;
+      color: gray;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    &-button {
+      background-color: transparent;
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 20px;
+      transition: 0.5s;
+
+      &:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+    }
   }
   &-info {
     width: 100%;
