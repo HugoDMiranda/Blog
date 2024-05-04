@@ -25,15 +25,15 @@ function Login() {
 
   return (
     <div className="login">
-      <h4 className="login-account-title">Welcome to Blogs</h4>
       <div className="login-account">
+        <h4 className="login-account-title">Welcome to Blogs</h4>
         <Formik
           initialValues={initialValues}
           onSubmit={submit}
           validationSchema={userSchema}
         >
           {login ? (
-            <Form>
+            <Form className="form">
               <h3 className="login-account-text">User name</h3>
               <Field
                 className="login-account-input"
@@ -62,18 +62,18 @@ function Login() {
                 component="span"
                 className="errorMessage"
               />
-              <spam
+              <p
                 className="login-account-login"
                 onClick={() => setLogin(false)}
               >
                 Don`t have a account? Sing in
-              </spam>
+              </p>
               <button className="login-account-button" type="submit">
                 Login
               </button>
             </Form>
           ) : (
-            <Form>
+            <Form className="form">
               <h3 className="login-account-text">User name</h3>
               <Field
                 className="login-account-input"
@@ -130,12 +130,9 @@ function Login() {
                 component="span"
                 className="errorMessage"
               />
-              <spam
-                className="login-account-login"
-                onClick={() => setLogin(true)}
-              >
+              <p className="login-account-login" onClick={() => setLogin(true)}>
                 You already have an account? Login
-              </spam>
+              </p>
               <button className="login-account-button" type="submit">
                 Sing in
               </button>
