@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../sass/Login.css";
 import * as yup from "yup";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 
 function Login() {
   const [login, setLogin] = useState(true);
+
+  useEffect(() => {}, [login]);
 
   const submit = () => {
     console.log("submit");
@@ -14,13 +16,20 @@ function Login() {
     name: yup.string().required(),
     email: yup.string().email().required(),
     password: yup.string().required(),
-    // chair: yup.string().required(),
+    username: yup.string().required(),
+    useremail: yup.string().email().required(),
+    userpassword: yup.string().required(),
+    confirmspassword: yup.string().required(),
   });
 
   const initialValues = {
     name: "",
     email: "",
     password: "",
+    username: "",
+    useremail: "",
+    userpassword: "",
+    confirmspassword: "",
   };
 
   return (
@@ -42,7 +51,7 @@ function Login() {
                 placeholder="Name"
                 id="name"
                 name="name"
-              />
+              />{" "}
               <ErrorMessage
                 name="name"
                 component="span"
@@ -74,12 +83,12 @@ function Login() {
             </Form>
           ) : (
             <Form className="form">
-              <h3 className="login-account-text">User name</h3>
+              <h3 className="login-account-text">Account name</h3>
               <Field
                 className="login-account-input"
                 autoComplete="off"
                 type="username"
-                placeholder="Name"
+                placeholder="User name"
                 id="username"
                 name="username"
               />
@@ -94,11 +103,11 @@ function Login() {
                 autoComplete="off"
                 type="email"
                 placeholder="Yourname@gmail.com"
-                id="email"
-                name="email"
+                id="useremail"
+                name="useremail"
               />
               <ErrorMessage
-                name="email"
+                name="useremail"
                 component="span"
                 className="errorMessage"
               />
@@ -112,7 +121,7 @@ function Login() {
                 name="userpassword"
               />
               <ErrorMessage
-                name="password"
+                name="userpassword"
                 component="span"
                 className="errorMessage"
               />
@@ -122,11 +131,11 @@ function Login() {
                 autoComplete="off"
                 type="password"
                 placeholder="Confirms password"
-                id="passwordC"
-                name="passwordC"
+                id="confirmspassword"
+                name="confirmspassword"
               />
               <ErrorMessage
-                name="passwordC"
+                name="confirmspassword"
                 component="span"
                 className="errorMessage"
               />
