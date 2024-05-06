@@ -1,6 +1,9 @@
 .login {
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92vh;
 
   &-account {
     width: 100%;
@@ -83,6 +86,10 @@
       rgba(255, 255, 255, 1) 18%,
       rgba(86, 86, 86, 1) 79%
     );
+
+    @media (max-width: 800px) {
+      display: none;
+    }
 
     h2 {
       font-size: 70px;
