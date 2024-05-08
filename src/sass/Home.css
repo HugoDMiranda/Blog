@@ -10,9 +10,21 @@
   display: flex;
   width: 100%;
 }
+@media (max-width: 900px) {
+  .home-blogs {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .home-blogs-topics {
   display: flex;
   flex-direction: column;
   margin: 5px 10px;
   width: 20%;
+}
+@media (max-width: 900px) {
+  .home-blogs-topics {
+    width: 90%;
+  }
 }/*# sourceMappingURL=Home.css.map */

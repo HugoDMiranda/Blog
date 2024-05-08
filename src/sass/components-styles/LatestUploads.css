@@ -10,7 +10,7 @@
 .latest .last {
   margin: 10px 0px;
   padding: 10px 5px;
-  background-color: rgb(209, 209, 209);
+  background-color: rgb(227, 227, 227);
 }
 .latest .last a {
   text-decoration: none;
@@ -19,4 +19,7 @@
 .latest .last .latest-info-img {
   max-width: 70px;
   border-radius: 50%;
+}
+.latest .last .latest-info p {
+  font-size: 12px;
 }/*# sourceMappingURL=LatestUploads.css.map */
