@@ -20,8 +20,8 @@ function Navbar() {
       icon: <FaUserAlt />,
     },
     {
-      path: "/comment",
-      name: "Comment",
+      path: "/Favorites",
+      name: "Favorites",
       icon: <FaCommentAlt />,
     },
     {

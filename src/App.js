@@ -6,6 +6,7 @@ import Main from "./views/Main";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import User from "./views/User";
+import Favorites from "./views/Favorites";
 
 const Layout = () => {
   return (
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/User",
         element: <User />,
+      },
+      {
+        path: "/Favorites",
+        element: <Favorites />,
       },
     ],
   },
