@@ -1,8 +1,26 @@
 import React, { useState } from "react";
 import "../sass/Favorites.css";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as yup from "yup";
 
 function Favorites() {
   const [changePassword, setChangePassword] = useState(false);
+
+  const submit = () => {
+    console.log("submit");
+  };
+
+  const passwordSchema = yup.object().shape({
+    password: yup.string().required(),
+    confirmspassword: yup.string().required(),
+    newpassword: yup.string().required(),
+  });
+
+  const initialValues = {
+    password: "",
+    confirmspassword: "",
+    newpassword: "",
+  };
 
   return (
     <div className="account">
@@ -27,15 +45,54 @@ function Favorites() {
           : `Want to change your password?`}
       </button>
       {changePassword ? (
-        <div className="account-newpassword">
-          <h3>Your password</h3>
-          <input />
-          <h3>Confims password</h3>
-          <input />
-          <h3>New password</h3>
-          <input />
-          <button>Change password</button>
-        </div>
+        <Formik
+          initialValues={initialValues}
+          onSubmit={submit}
+          validationSchema={passwordSchema}
+        >
+          <Form className="account-newpassword">
+            <h3>Your password</h3>
+            <Field
+              className="account-newpassword-input"
+              autoComplete="off"
+              type="password"
+              id="password"
+              name="password"
+            />
+            <ErrorMessage
+              name="password"
+              component="span"
+              className="errorMessage"
+            />
+            <h3>Confims password</h3>
+            <Field
+              className="account-newpassword-input"
+              autoComplete="off"
+              type="password"
+              id="confirmspassword"
+              name="confirmspassword"
+            />
+            <ErrorMessage
+              name="confirmspassword"
+              component="span"
+              className="errorMessage"
+            />
+            <h3>New password</h3>
+            <Field
+              className="account-newpassword-input"
+              autoComplete="off"
+              type="password"
+              id="newpassword"
+              name="newpassword"
+            />
+            <ErrorMessage
+              name="newpassword"
+              component="span"
+              className="errorMessage"
+            />
+            <button type="submit">Change password</button>
+          </Form>
+        </Formik>
       ) : null}
     </div>
   );
