@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../sass/Favorites.css";
 
 function Favorites() {
   const [changePassword, setChangePassword] = useState(false);
@@ -15,10 +16,10 @@ function Favorites() {
         <p>Last login</p>
       </div>
       <div className="account-data">
-        <p>Name</p>
-        <p>Email</p>
-        <p>number</p>
-        <p>Password</p>
+        <h3>Name</h3>
+        <h3>Email</h3>
+        <h3>number</h3>
+        <h3>Password</h3>
       </div>
       <button onClick={() => setChangePassword(!changePassword)}>
         {changePassword
@@ -27,11 +28,11 @@ function Favorites() {
       </button>
       {changePassword ? (
         <div className="account-newpassword">
-          <p>Your password</p>
+          <h3>Your password</h3>
           <input />
-          <p>Confims password</p>
+          <h3>Confims password</h3>
           <input />
-          <p>New password</p>
+          <h3>New password</h3>
           <input />
           <button>Change password</button>
         </div>

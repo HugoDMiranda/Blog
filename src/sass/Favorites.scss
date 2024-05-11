@@ -1,0 +1,81 @@
+.account {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 45px;
+
+  button {
+    font-size: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    padding: 10px 5px;
+    margin: 20px 0px;
+    transition: 0.3s;
+    cursor: pointer;
+    display: block;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  &-info {
+    padding-top: 20px;
+    background-color: rgb(206, 206, 206);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &-img {
+      width: 250px;
+      border-radius: 50%;
+    }
+
+    h4 {
+      font-size: 50px;
+      margin: 10px;
+      background-color: black;
+      color: white;
+      width: 100%;
+      text-align: center;
+      font-weight: 200;
+    }
+  }
+  &-data {
+    width: 40%;
+
+    h3 {
+      font-size: 25px;
+      width: 100%;
+      font-weight: 300;
+    }
+  }
+
+  &-newpassword {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h3 {
+      text-align: start;
+      width: 100%;
+      font-weight: 100;
+      margin: 10px;
+    }
+
+    input {
+      border: none;
+      border-bottom: 1px solid gray;
+      width: 100%;
+      height: 40px;
+      margin-bottom: 20px;
+    }
+  }
+}
