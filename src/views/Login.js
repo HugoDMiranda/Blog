@@ -56,6 +56,9 @@ function Login() {
                 name="name"
                 component="span"
                 className="errorMessage"
+                render={() => (
+                  <span className="errorMessage">Name is required</span>
+                )}
               />
               <h4 className="login-account-text">Password</h4>
               <Field
@@ -70,6 +73,9 @@ function Login() {
                 name="password"
                 component="span"
                 className="errorMessage"
+                render={() => (
+                  <span className="errorMessage">Password is required</span>
+                )}
               />
               <p
                 className="login-account-login"
@@ -96,6 +102,9 @@ function Login() {
                 name="username"
                 component="span"
                 className="errorMessage"
+                render={() => (
+                  <span className="errorMessage">User name is required</span>
+                )}
               />
               <h3 className="login-account-text">Email</h3>
               <Field
@@ -124,6 +133,9 @@ function Login() {
                 name="userpassword"
                 component="span"
                 className="errorMessage"
+                render={() => (
+                  <span className="errorMessage">Password is required</span>
+                )}
               />
               <h4 className="login-account-text">Confirms Password</h4>
               <Field
@@ -138,6 +150,11 @@ function Login() {
                 name="confirmspassword"
                 component="span"
                 className="errorMessage"
+                render={() => (
+                  <span className="errorMessage">
+                    Confirm password is required
+                  </span>
+                )}
               />
               <p className="login-account-login" onClick={() => setLogin(true)}>
                 You already have an account? Login
