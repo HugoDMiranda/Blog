@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaUserAlt, FaCommentAlt, FaStar } from "react-icons/fa";
 import { IoHomeSharp } from "react-icons/io5";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "../sass/components-styles/Navbar.css";
 
 function Navbar() {
@@ -61,10 +61,14 @@ function Navbar() {
             </div>
           </NavLink>
         ))}
-        <div className="nav-user" style={{ display: isOpen ? "flex" : "none" }}>
+        <Link
+          to="/User"
+          className="nav-user"
+          style={{ display: isOpen ? "flex" : "none" }}
+        >
           <img src="img/tes3.png" alt="user-img" className="nav-user-img" />
           <span>User name</span>
-        </div>
+        </Link>
       </div>
     </div>
   );
