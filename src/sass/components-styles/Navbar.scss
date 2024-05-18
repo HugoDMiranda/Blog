@@ -13,9 +13,15 @@
     align-items: center;
     justify-content: flex-start;
     margin-top: auto;
-    margin-left: 5px;
-    margin-bottom: 5px;
+    padding: 5px;
     transition: all 0.5s ease;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
 
     &-img {
       width: 60px;

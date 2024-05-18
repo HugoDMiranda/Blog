@@ -13,9 +13,14 @@
   align-items: center;
   justify-content: flex-start;
   margin-top: auto;
-  margin-left: 5px;
-  margin-bottom: 5px;
+  padding: 5px;
   transition: all 0.5s ease;
+  text-decoration: none;
+  color: black;
+}
+.sidebar .nav-user:hover {
+  background-color: black;
+  color: white;
 }
 .sidebar .nav-user-img {
   width: 60px;
