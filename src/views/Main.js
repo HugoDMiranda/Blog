@@ -4,7 +4,7 @@ import Similar from "../components/Similar";
 
 function Main() {
   return (
-    <div className="main">
+    <div className="main animate__animated animate__fadeInDown">
       <div className="main-info">
         <div className="main-info-user">
           <img

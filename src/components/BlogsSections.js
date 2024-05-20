@@ -3,7 +3,7 @@ import "../sass/components-styles/BlogsSections.css";
 import { Link } from "react-router-dom";
 
 function BlogsSections() {
-  const Test = [1, 2, 3, 4, 5];
+  const Test = [1, 2, 3, 4, 5, 6];
 
   return (
     <section className="sections">
