@@ -57,6 +57,11 @@
   justify-content: center;
   flex-direction: column;
 }
+@media (max-width: 800px) {
+  .account-newpassword {
+    width: 75%;
+  }
+}
 .account-newpassword h3 {
   text-align: start;
   width: 100%;

@@ -20,6 +20,11 @@
   justify-content: center;
   flex-direction: column;
 }
+@media (max-width: 800px) {
+  .login-account .form {
+    width: 75%;
+  }
+}
 .login-account-title {
   font-size: 25px;
   font-weight: 400;
