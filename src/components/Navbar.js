@@ -16,18 +16,18 @@ function Navbar() {
     },
     {
       path: "/Login",
-      name: "Yours",
+      name: "Login",
       icon: <FaUserAlt />,
     },
     {
       path: "/Favorites",
       name: "Favorites",
-      icon: <FaCommentAlt />,
+      icon: <FaStar />,
     },
     {
       path: "/User",
-      name: "Favorites",
-      icon: <FaStar />,
+      name: "User",
+      icon: <FaCommentAlt />,
     },
   ];
 
