@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaBars, FaUserAlt, FaCommentAlt, FaStar } from "react-icons/fa";
+import { FaBars, FaUserAlt, FaStar, FaUserEdit } from "react-icons/fa";
 import { IoHomeSharp } from "react-icons/io5";
 import { NavLink, Link } from "react-router-dom";
 import "../sass/components-styles/Navbar.css";
@@ -17,7 +17,7 @@ function Navbar() {
     {
       path: "/Login",
       name: "Login",
-      icon: <FaUserAlt />,
+      icon: <FaUserEdit />,
     },
     {
       path: "/Favorites",
@@ -27,7 +27,7 @@ function Navbar() {
     {
       path: "/User",
       name: "User",
-      icon: <FaCommentAlt />,
+      icon: <FaUserAlt />,
     },
   ];
 
