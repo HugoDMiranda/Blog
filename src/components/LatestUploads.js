@@ -11,7 +11,10 @@ function LatestUploads() {
       <section className="latest">
         {Test.map((test) => {
           return (
-            <div className="last" key={test}>
+            <div
+              className="last animate__animated animate__fadeInRight"
+              key={test}
+            >
               <Link to="/Main">
                 <div className="latest-info">
                   <img

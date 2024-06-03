@@ -11,10 +11,26 @@
   margin: 10px 0px;
   padding: 10px 5px;
   background-color: rgb(227, 227, 227);
+  border: 1px solid rgb(218, 218, 218);
+  cursor: pointer;
+  transition: 0.2s;
+  color: black;
+  text-decoration: none;
+  background: linear-gradient(to left, rgb(231, 0, 123) 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: left;
+}
+.latest .last:hover {
+  background-position: right;
+  color: white;
 }
 .latest .last a {
   text-decoration: none;
   color: black;
+  transition: 0.2s;
+}
+.latest .last a:hover {
+  color: white;
 }
 .latest .last .latest-info-img {
   max-width: 70px;
