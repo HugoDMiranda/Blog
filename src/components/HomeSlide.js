@@ -4,7 +4,7 @@ import "../sass/components-styles/HomeSlide.css";
 function HomeSlide() {
   const [colors, setColors] = useState("gray");
 
-  const getNewQuote = () => {
+  const getNewColor = () => {
     var colors = [
       "#16a085",
       "#27ae60",
